@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookzone - Festivalul Iubirii</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/ico/style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <!-- <div class="popup_bg_1">
+        <div class="popup_bg_2">
+            <div class="title">
+                <input type="submit" name="btnInchideMesaj" value="X" id="btnInchideMesaj" class="btn_inchide">
+                <span class="titlu_1">Produsul a fost adăugat în coș</span>
+            </div>
+            <div class="spacer4"></div>
+            <div class="produs_adaugat">
+                <div class="imagine">
+                    <img src="/img/img04.png">
+                </div>
+                <div class="text">
+                    <span class="titlu_2">Cronicile unui barbat - Vol. 3</span>
+                </div>
+                <div class="price">
+                    <p class="pret_vechi">39 Lei</p>
+                    <p class="pret">18.9 Lei</p>
+                </div>
+                <div class="action">
+                    <input type="submit" name="btnContinuaCumparaturile" value="Continuă cumpărăturile" id="btnContinuaCumparaturile" class="continuaBF">
+                    <a href="/cos/produse" class="btn_color sm pasul_urmator">
+                        <i class="icon-arrow_up_long pasul_urmator-ico"></i>
+                        <span class="pasul_urmator-center">Finalizează comanda</span>
+                    </a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div> -->
+    <div class="wrap" id="top">
+        <header class="header">
+            <div class="menu-top">
+                <a href="#" class="menu-top__back-to-site">
+                    <i class="fas fa-chevron-left menu-top__back-to-site-ico"></i>
+                    Înapoi în site
+                </a>
+                <a href="#" class="menu-top__brand">
+                    <img src="img/bookzone-logo.svg" alt="Bookzone.ro" class="menu-top__img">
+                </a>
+                <a href="#" class="menu-top__order">
+                    Finalizează comanda
+                </a>
+            </div>
+            <!-- ./-- menu-top -->
+        </header>
+        <!-- ./- header -->
+    </div>
+    <div class="banner">
+        <img src="img/banner-test.jpg" alt="test" class="banner__img">
+    </div>
+    <!-- ./-- banner -->
+    <div class="timer">
+        <p class="timer__timeleft">Au mai ramas</p>
+        <div class="timer__deadline">
+            <!-- days -->
+            <!-- <div class="deadline-format">
+                <div>
+                <h4 class="days">34</h4>
+                <span>days</span>
+                </div>
+            </div> -->
+            <!-- hours -->
+            <div class="deadline-format">
+                <div>
+                <h4 class="hours">34</h4>
+                <span>ore</span>
+                </div>
+            </div>
+            <!-- minutes -->
+            <div class="deadline-format">
+                <div>
+                <h4 class="minutes">34</h4>
+                <span>min</span>
+                </div>
+            </div>
+            <!-- seconds -->
+            <div class="deadline-format">
+                <div>
+                <h4 class="seconds">34</h4>
+                <span>sec</span>
+                </div>
+            </div>
+        </div>
+        <!-- ./-- deadline -->
+    </div>
+    <!-- ./-- timer -->
+    <nav class="navigation">
+        <ul class="navigation__menu">
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">
+                    Toate Categoriile
+                </a>
+                <i class="fas fa-chevron-down navigation__chev navigation__chev--cat"></i>
+            </li>
+        </ul>
+        <ul class="navigation__submenu">
+            <li class="navigation__subitem">
+                <a href="#" class="navigation__sublink">
+                    <i class="fas fa-chevron-right navigation__chev navigation__chev--subcat"></i>
+                    Cărți de dragoste
+                </a>
+            </li>
+            <li class="navigation__subitem">
+                <a href="#" class="navigation__sublink">
+                    <i class="fas fa-chevron-right navigation__chev navigation__chev--subcat"></i>
+                    Cărți erotice
+                </a>
+            </li>
+            <li class="navigation__subitem">
+                <a href="#" class="navigation__sublink">
+                    <i class="fas fa-chevron-right navigation__chev navigation__chev--subcat"></i>
+                    Cărți despre sex
+                </a>
+            </li>
+            <li class="navigation__subitem">
+                <a href="#" class="navigation__sublink">
+                    <i class="fas fa-chevron-right navigation__chev navigation__chev--subcat"></i>
+                    Pachete speciale cărți
+                </a>
+            </li>
+            <li class="navigation__subitem">
+                <a href="#" class="navigation__sublink">
+                    <i class="fas fa-chevron-right navigation__chev navigation__chev--subcat"></i>
+                    Cărți fantasy
+                </a>
+            </li>
+            <li class="navigation__subitem">
+                <a href="#" class="navigation__sublink">
+                    <i class="fas fa-chevron-right navigation__chev navigation__chev--subcat"></i>
+                    Cărți polițiste
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- ./-- navigation -->
+    <div class="wrap">
+        <main class="main">
+            <div class="slider-wrap">
+                <div class="slider-wrap__banner">
+                    <img src="img/top-oferta.svg" alt="Top Offers" class="slider-wrap__img">
+                </div>
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="book">
+                                <a href="#">
+                                    <span class="book__test"></span>
+                                    <div class="book__badge">
+                                        <p class="book__badge__text">-49%</p>
+                                    </div>
+                                    <img src="img/img04.png" alt="Some book 4" class="book__img">
+                                    <div class="book__details">
+                                        <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
+                                        <p class="book__volume">Volumul 1+2</p>
+                                    </div>
+                                    <div class="book__price">
+                                        <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
+                                        <div class="book__price__new">19.9 Lei</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                            <div class="book">
+                                <span class="book__test"></span>
+                                <div class="book__badge">
+                                    <p class="book__badge__text">-49%</p>
+                                </div>
+                                <img src="img/img04.png" alt="Some book 4" class="book__img">
+                                <div class="book__details">
+                                    <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
+                                    <p class="book__volume">Volumul 1+2</p>
+                                </div>
+                                <div class="book__price">
+                                    <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
+                                    <div class="book__price__new">19.9 Lei</div>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="book">
+                                <a href="#">
+                                <span class="book__test"></span>
+                                <div class="book__badge">
+                                    <p class="book__badge__text">-49%</p>
+                                </div>
+                                <img src="img/img04.png" alt="Some book 4" class="book__img">
+                                <div class="book__details">
+                                    <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
+                                    <p class="book__volume">Volumul 1+2</p>
+                                </div>
+                                <div class="book__price">
+                                    <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
+                                    <div class="book__price__new">19.9 Lei</div>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="book">
+                                <a href="#">
+                                <span class="book__test"></span>
+                                <div class="book__badge">
+                                    <p class="book__badge__text">-49%</p>
+                                </div>
+                                <img src="img/img04.png" alt="Some book 4" class="book__img">
+                                <div class="book__details">
+                                    <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
+                                    <p class="book__volume">Volumul 1+2</p>
+                                </div>
+                                <div class="book__price">
+                                    <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
+                                    <div class="book__price__new">19.9 Lei</div>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="book">
+                                <a href="#">
+                                <span class="book__test"></span>
+                                <div class="book__badge">
+                                    <p class="book__badge__text">-49%</p>
+                                </div>
+                                <img src="img/img04.png" alt="Some book 4" class="book__img">
+                                <div class="book__details">
+                                    <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
+                                    <p class="book__volume">Volumul 1+2</p>
+                                </div>
+                                <div class="book__price">
+                                    <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
+                                    <div class="book__price__new">19.9 Lei</div>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="book">
+                                <a href="#">
+                                <span class="book__test"></span>
+                                <div class="book__badge">
+                                    <p class="book__badge__text">-49%</p>
+                                </div>
+                                <img src="img/img04.png" alt="Some book 4" class="book__img">
+                                <div class="book__details">
+                                    <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
+                                    <p class="book__volume">Volumul 1+2</p>
+                                </div>
+                                <div class="book__price">
+                                    <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
+                                    <div class="book__price__new">19.9 Lei</div>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="book">
+                                <a href="#">
+                                <span class="book__test"></span>
+                                <div class="book__badge">
+                                    <p class="book__badge__text">-49%</p>
+                                </div>
+                                <img src="img/img04.png" alt="Some book 4" class="book__img">
+                                <div class="book__details">
+                                    <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
+                                    <p class="book__volume">Volumul 1+2</p>
+                                </div>
+                                <div class="book__price">
+                                    <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
+                                    <div class="book__price__new">19.9 Lei</div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="book">
+                                <a href="#">
+                                <span class="book__test"></span>
+                                <div class="book__badge">
+                                    <p class="book__badge__text">-49%</p>
+                                </div>
+                                <img src="img/img04.png" alt="Some book 4" class="book__img">
+                                <div class="book__details">
+                                    <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
+                                    <p class="book__volume">Volumul 1+2</p>
+                                </div>
+                                <div class="book__price">
+                                    <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
+                                    <div class="book__price__new">19.9 Lei</div>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Navigation -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <!-- ./-- slider-wrap -->
+            <div class="main-wrap">
+                <h1>SOme text</h1>
+                <div class="container">
+                    <div class="container__wrap">
+                        <div class="product">
+                            <div class="product__badge">
+                                <p class="product__badge__text">-49%</p>
+                            </div>
+                            <img src="img/img04.png" alt="Some book 4" class="book__img">
+                            <div class="book__details">
+                                <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
+                                <p class="book__volume">Volumul 1+2</p>
+                            </div>
+                            <div class="book__price">
+                                <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
+                                <div class="book__price__new">19.9 Lei</div>
+                            </div>
+                            <div class="book__add">
+                                <a class="btn btn-cart">
+                                    <i class="icon-adauga_in_cos btn-ico"></i>
+                                    <p class="btn-txt">Adaugă în coș</p>
+                                </a>
+                                <p class="book__left">3 produse rămase</p>
+                            </div>
+                        </div>
+                        <!-- ./-product -->
+                        <div class="product">
+                            <div class="product__badge">
+                                <p class="product__badge__text">-49%</p>
+                            </div>
+                            <img src="img/img04.png" alt="Some book 4" class="book__img">
+                            <div class="book__details">
+                                <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
+                                <p class="book__volume">Volumul 1+2</p>
+                            </div>
+                            <div class="book__price">
+                                <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
+                                <div class="book__price__new">19.9 Lei</div>
+                            </div>
+                            <div class="book__add">
+                                <a class="btn btn-cart">
+                                    <i class="icon-adauga_in_cos btn-ico"></i>
+                                    <p class="btn-txt">Adaugă în coș</p>
+                                </a>
+                                <p class="book__left">3 produse rămase</p>
+                            </div>
+                        </div>
+                        <!-- ./-product -->
+                        <div class="product">
+                            <div class="product__badge">
+                                <p class="product__badge__text">-49%</p>
+                            </div>
+                            <img src="img/img04.png" alt="Some book 4" class="book__img">
+                            <div class="book__details">
+                                <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
+                                <p class="book__volume">Volumul 1+2</p>
+                            </div>
+                            <div class="book__price">
+                                <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
+                                <div class="book__price__new">19.9 Lei</div>
+                            </div>
+                            <div class="book__add">
+                                <a class="btn btn-cart">
+                                    <i class="icon-adauga_in_cos btn-ico"></i>
+                                    <p class="btn-txt">Adaugă în coș</p>
+                                </a>
+                                <p class="book__left">3 produse rămase</p>
+                            </div>
+                        </div>
+                        <!-- ./-product -->
+                        <div class="product">
+                            <div class="product__badge">
+                                <p class="product__badge__text">-49%</p>
+                            </div>
+                            <img src="img/img04.png" alt="Some book 4" class="book__img">
+                            <div class="book__details">
+                                <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
+                                <p class="book__volume">Volumul 1+2</p>
+                            </div>
+                            <div class="book__price">
+                                <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
+                                <div class="book__price__new">19.9 Lei</div>
+                            </div>
+                            <div class="book__add">
+                                <a class="btn btn-cart">
+                                    <i class="icon-adauga_in_cos btn-ico"></i>
+                                    <p class="btn-txt">Adaugă în coș</p>
+                                </a>
+                                <p class="book__left">3 produse rămase</p>
+                            </div>
+                        </div>
+                        <!-- ./-product -->
+                        <div class="product product--large">
+                            <div class="product__badge product__badge--large">
+                                <p class="product__badge__text">-49%</p>
+                            </div>
+                            <img src="img/img04.png" alt="Some book 4" class="book__img book__img--large">
+                            <div class="book__details">
+                                <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
+                                <p class="book__volume">Volumul 1+2</p>
+                            </div>
+                            <div class="book__wrap">
+                                <div class="book__price">
+                                    <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
+                                    <div class="book__price__new">19.9 Lei</div>
+                                </div>
+                                <div class="book__add book__add--large">
+                                    <a class="btn btn-cart">
+                                        <i class="icon-adauga_in_cos btn-ico"></i>
+                                        <p class="btn-txt">Adaugă în coș</p>
+                                    </a>
+                                    <p class="book__left">3 produse rămase</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./-product -->
+                        <div class="product">
+                            <div class="product__badge">
+                                <p class="product__badge__text">-49%</p>
+                            </div>
+                            <img src="img/img04.png" alt="Some book 4" class="book__img">
+                            <div class="book__details">
+                                <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
+                                <p class="book__volume">Volumul 1+2</p>
+                            </div>
+                            <div class="book__price">
+                                <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
+                                <div class="book__price__new">19.9 Lei</div>
+                            </div>
+                            <div class="book__add">
+                                <a class="btn btn-cart">
+                                    <i class="icon-adauga_in_cos btn-ico"></i>
+                                    <p class="btn-txt">Adaugă în coș</p>
+                                </a>
+                                <p class="book__left">3 produse rămase</p>
+                            </div>
+                        </div>
+                        <!-- ./-product -->
+                        <div class="product product--large">
+                            <div class="product__badge product__badge--large">
+                                <p class="product__badge__text">-49%</p>
+                            </div>
+                            <img src="img/img04.png" alt="Some book 4" class="book__img book__img--large">
+                            <div class="book__details">
+                                <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
+                                <p class="book__volume">Volumul 1+2</p>
+                            </div>
+                            <div class="book__wrap">
+                                <div class="book__price">
+                                    <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
+                                    <div class="book__price__new">19.9 Lei</div>
+                                </div>
+                                <div class="book__add book__add--large">
+                                    <a class="btn btn-cart">
+                                        <i class="icon-adauga_in_cos btn-ico"></i>
+                                        <p class="btn-txt">Adaugă în coș</p>
+                                    </a>
+                                    <p class="book__left">3 produse rămase</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./-product -->
+                        <div class="product">
+                            <div class="product__badge">
+                                <p class="product__badge__text">-49%</p>
+                            </div>
+                            <img src="img/img04.png" alt="Some book 4" class="book__img">
+                            <div class="book__details">
+                                <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
+                                <p class="book__volume">Volumul 1+2</p>
+                            </div>
+                            <div class="book__price">
+                                <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
+                                <div class="book__price__new">19.9 Lei</div>
+                            </div>
+                            <div class="book__add">
+                                <a class="btn btn-cart">
+                                    <i class="icon-adauga_in_cos btn-ico"></i>
+                                    <p class="btn-txt">Adaugă în coș</p>
+                                </a>
+                                <p class="book__left">3 produse rămase</p>
+                            </div>
+                        </div>
+                        <!-- ./-product -->
+                        <div class="product">
+                            <div class="product__badge">
+                                <p class="product__badge__text">-49%</p>
+                            </div>
+                            <img src="img/img04.png" alt="Some book 4" class="book__img">
+                            <div class="book__details">
+                                <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
+                                <p class="book__volume">Volumul 1+2</p>
+                            </div>
+                            <div class="book__price">
+                                <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
+                                <div class="book__price__new">19.9 Lei</div>
+                            </div>
+                            <div class="book__add">
+                                <a class="btn btn-cart">
+                                    <i class="icon-adauga_in_cos btn-ico"></i>
+                                    <p class="btn-txt">Adaugă în coș</p>
+                                </a>
+                                <p class="book__left">3 produse rămase</p>
+                            </div>
+                        </div>
+                        <!-- ./-product -->
+                        <div class="product">
+                            <div class="product__badge">
+                                <p class="product__badge__text">-49%</p>
+                            </div>
+                            <img src="img/img04.png" alt="Some book 4" class="book__img">
+                            <div class="book__details">
+                                <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
+                                <p class="book__volume">Volumul 1+2</p>
+                            </div>
+                            <div class="book__price">
+                                <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
+                                <div class="book__price__new">19.9 Lei</div>
+                            </div>
+                            <div class="book__add">
+                                <a class="btn btn-cart">
+                                    <i class="icon-adauga_in_cos btn-ico"></i>
+                                    <p class="btn-txt">Adaugă în coș</p>
+                                </a>
+                                <p class="book__left">3 produse rămase</p>
+                            </div>
+                        </div>
+                        <!-- ./-product -->
+                    </div>
+                </div>
+                <!-- ./--container -->
+            </div>
+        </main>
+        <!-- ./-- container -->
+        <a href="#top" class="back-to-top">
+            <i class="icon-arrow_up_long back-to-top__csarr"></i>
+        </a>
+        <!-- ./-- footer -->
+    </div>
+    <!-- ./-- wrap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
