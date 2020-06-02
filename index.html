@@ -3,562 +3,1935 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookzone - Festivalul Iubirii</title>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="stylesheet" href="css/ico/style.css">
+    <title>Bookzone - Product</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/icons/style.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <!-- <div class="popup_bg_1">
-        <div class="popup_bg_2">
-            <div class="title">
-                <input type="submit" name="btnInchideMesaj" value="X" id="btnInchideMesaj" class="btn_inchide">
-                <span class="titlu_1">Produsul a fost adăugat în coș</span>
-            </div>
-            <div class="spacer4"></div>
-            <div class="produs_adaugat">
-                <div class="imagine">
-                    <img src="/img/img04.png">
+    <nav>
+        <div class="container">
+            <div class="nav">
+                <div class="nav__burger">
+                    <a href="#" class="nav__burger__target">
+                        <span class="nav__burger__trigger"></span>
+                    </a>
+                    <!-- ./-- burger menu ( mobile ) -->
+                    <div class="nav__burger__menu">
+                        <ul class="nav__menu__big">
+                            <li class="nav__menu__big__item">
+                                <a href="#" class="nav__menu__big__link">
+                                    Categorii <i class="nav__btn__text__ico icon-arrow_down"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- ./-- big menu (desktop) -->
+                    <div class="nav__burger__menu2">
+                        <ul class="nav__menu__medium">
+                            <li class="nav__menu__medium__item">
+                                <a href="#" class="nav__menu__medium__link">
+                                    Despre noi
+                                </a>
+                            </li>
+                            <li class="nav__menu__medium__item">
+                                <a href="#" class="nav__menu__medium__link">
+                                    Blogul Bookzone
+                                </a>
+                            </li>
+                            <li class="nav__menu__medium__item">
+                                <a href="#" class="nav__menu__medium__link">
+                                    Vreau să public o carte!
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- ./-- about blog publish -->
+                    <div class="nav__burger__menu3">
+                        <ul class="nav__menu__medium nav__menu__medium--last">
+                            <li class="nav__menu__medium__item">
+                                <a href="#" class="nav__menu__medium__link">
+                                    Ajutor
+                                </a>
+                            </li>
+                            <li class="nav__menu__medium__item">
+                                <a href="#" class="nav__menu__medium__link">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- ./-- help contact -->
                 </div>
-                <div class="text">
-                    <span class="titlu_2">Cronicile unui barbat - Vol. 3</span>
+                <!-- ./-- burger-menu @mobile -->
+                <div class="nav__search">
+                    <form class="nav__search__form">
+                        <input type="text" autocomplete="off" name="nav__search" class="nav__search__input"
+                            placeholder="Caută un produs aici">
+                    </form>
+                    <!-- ./-- probabil "popup" cu search input si afisare produse -->
+                    <button for="nav__search" class="nav__btn nav__btn__search">
+                        <i class="nav__icon nav__icon__search--desktop icon-search"></i>
+                    </button>
+                    <!-- ./-- search btn @mobile-->
                 </div>
-                <div class="price">
-                    <p class="pret_vechi">39 Lei</p>
-                    <p class="pret">18.9 Lei</p>
+                <!-- ./-- search @mobile-->
+                <div class="nav__account">
+                    <button class="nav__btn nav__account__btn">
+                        <i class="nav__icon icon-my_account"></i>
+                        <span class="nav__btn__text">
+                            Contul meu
+                            <i class="nav__btn__text__ico icon-arrow_down"></i>
+                        </span>
+                    </button>
                 </div>
-                <div class="action">
-                    <input type="submit" name="btnContinuaCumparaturile" value="Continuă cumpărăturile" id="btnContinuaCumparaturile" class="continuaBF">
-                    <a href="/cos/produse" class="btn_color sm pasul_urmator">
-                        <i class="icon-arrow_up_long pasul_urmator-ico"></i>
-                        <span class="pasul_urmator-center">Finalizează comanda</span>
+                <!-- ./-- myAccount @desktop -->
+                <div class="nav__logo">
+                    <a href="#" class="nav__logo__link">
+                        <img src="img/logo_header.svg" alt="Bookzone.ro" class="nav__logo__img">
                     </a>
                 </div>
+                <!-- ./-- bookzone logo -->
+                <div class="nav__wishlist">
+                    <button class="nav__btn nav__wishlist__btn">
+                        <i class="nav__icon icon-heart_line"></i>
+                        <span class="nav__btn__text">
+                            Wishlist <i class="nav__btn__text__ico icon-arrow_down"></i>
+                        </span>
+                    </button>
+                </div>
+                <!-- ./-- whishlist -->
+                <div class="nav__cart">
+                    <button class="nav__btn nav__cart__btn">
+                        <i class="nav__icon icon-cos_navbar"></i>
+                        <span class="nav__btn__text">
+                            Cosul meu
+                            <i class="nav__btn__text__ico icon-arrow_down"></i>
+                        </span>
+                    </button>
+                </div>
+                <!-- ./-- add to cart -->
             </div>
-            <div class="clear"></div>
+            <!-- ./-- navigation wrapper end desktop/mobile -->
         </div>
-    </div> -->
-    <div class="wrap" id="top">
-        <header class="header">
-            <div class="menu-top">
-                <a href="#" class="menu-top__back-to-site">
-                    <i class="fas fa-chevron-left menu-top__back-to-site-ico"></i>
-                    Înapoi în site
-                </a>
-                <a href="#" class="menu-top__brand">
-                    <img src="img/bookzone-logo.svg" alt="Bookzone.ro" class="menu-top__img">
-                </a>
-                <a href="#" class="menu-top__order">
-                    Finalizează comanda
-                </a>
-            </div>
-            <!-- ./-- menu-top -->
-        </header>
-        <!-- ./- header -->
-    </div>
-    <div class="banner">
-        <img src="img/banner-test.jpg" alt="test" class="banner__img">
-    </div>
-    <!-- ./-- banner -->
-    <div class="timer">
-        <p class="timer__timeleft">Au mai ramas</p>
-        <div class="timer__deadline">
-            <!-- days -->
-            <!-- <div class="deadline-format">
-                <div>
-                <h4 class="days">34</h4>
-                <span>days</span>
-                </div>
-            </div> -->
-            <!-- hours -->
-            <div class="deadline-format">
-                <div>
-                <h4 class="hours">34</h4>
-                <span>ore</span>
-                </div>
-            </div>
-            <!-- minutes -->
-            <div class="deadline-format">
-                <div>
-                <h4 class="minutes">34</h4>
-                <span>min</span>
-                </div>
-            </div>
-            <!-- seconds -->
-            <div class="deadline-format">
-                <div>
-                <h4 class="seconds">34</h4>
-                <span>sec</span>
-                </div>
-            </div>
-        </div>
-        <!-- ./-- deadline -->
-    </div>
-    <!-- ./-- timer -->
-    <nav class="navigation">
-        <ul class="navigation__menu">
-            <li class="navigation__item">
-                <a href="#" class="navigation__link">
-                    Toate Categoriile
-                </a>
-                <i class="fas fa-chevron-down navigation__chev navigation__chev--cat"></i>
-            </li>
-        </ul>
-        <ul class="navigation__submenu">
-            <li class="navigation__subitem">
-                <a href="#" class="navigation__sublink">
-                    <i class="fas fa-chevron-right navigation__chev navigation__chev--subcat"></i>
-                    Cărți de dragoste
-                </a>
-            </li>
-            <li class="navigation__subitem">
-                <a href="#" class="navigation__sublink">
-                    <i class="fas fa-chevron-right navigation__chev navigation__chev--subcat"></i>
-                    Cărți erotice
-                </a>
-            </li>
-            <li class="navigation__subitem">
-                <a href="#" class="navigation__sublink">
-                    <i class="fas fa-chevron-right navigation__chev navigation__chev--subcat"></i>
-                    Cărți despre sex
-                </a>
-            </li>
-            <li class="navigation__subitem">
-                <a href="#" class="navigation__sublink">
-                    <i class="fas fa-chevron-right navigation__chev navigation__chev--subcat"></i>
-                    Pachete speciale cărți
-                </a>
-            </li>
-            <li class="navigation__subitem">
-                <a href="#" class="navigation__sublink">
-                    <i class="fas fa-chevron-right navigation__chev navigation__chev--subcat"></i>
-                    Cărți fantasy
-                </a>
-            </li>
-            <li class="navigation__subitem">
-                <a href="#" class="navigation__sublink">
-                    <i class="fas fa-chevron-right navigation__chev navigation__chev--subcat"></i>
-                    Cărți polițiste
-                </a>
-            </li>
-        </ul>
     </nav>
-    <!-- ./-- navigation -->
-    <div class="wrap">
-        <main class="main">
-            <div class="slider-wrap">
-                <div class="slider-wrap__banner">
-                    <img src="img/top-oferta.svg" alt="Top Offers" class="slider-wrap__img">
-                </div>
-                <!-- Swiper -->
-                <div class="swiper-container">
+    <!-- ./-- navigation mobile/desktop -->
+    <main>
+        <div class="gx">
+            <div class="breadcrumbs">
+                <a href="#"><img src="img/logo_symbol.svg" alt="homepage" class="breadcrumbs__logo"></a>
+                <i class="breadcrumbs__icon icon-arrow_right"></i>
+                <a href="#" class="breadcrumbs__link">Cărți</a>
+                <i class="breadcrumbs__icon icon-arrow_right"></i>
+                <a href="#" class="breadcrumbs__link">Pachete speciale cărți</a>
+            </div>
+            <!-- ./-- breadcrumbs -->
+            <div class="carousel">
+                <div class="swiper-container swiper-head">
+                    <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
+                        <!-- Slides -->
                         <div class="swiper-slide">
-                            <div class="book">
-                                <a href="#">
-                                    <span class="book__test"></span>
-                                    <div class="book__badge">
-                                        <p class="book__badge__text">-49%</p>
-                                    </div>
-                                    <img src="img/img04.png" alt="Some book 4" class="book__img">
-                                    <div class="book__details">
-                                        <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
-                                        <p class="book__volume">Volumul 1+2</p>
-                                    </div>
-                                    <div class="book__price">
-                                        <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
-                                        <div class="book__price__new">19.9 Lei</div>
-                                    </div>
-                                </a>
-                            </div>
+                            <img src="img/img01.png" alt="Carte 1" class="swiper-img">
                         </div>
                         <div class="swiper-slide">
-                            <a href="#">
-                            <div class="book">
-                                <span class="book__test"></span>
-                                <div class="book__badge">
-                                    <p class="book__badge__text">-49%</p>
-                                </div>
-                                <img src="img/img04.png" alt="Some book 4" class="book__img">
-                                <div class="book__details">
-                                    <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
-                                    <p class="book__volume">Volumul 1+2</p>
-                                </div>
-                                <div class="book__price">
-                                    <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
-                                    <div class="book__price__new">19.9 Lei</div>
-                                </div>
-                            </a>
-                            </div>
+                            <img src="img/img01.png" alt="Carte 1" class="swiper-img">
                         </div>
                         <div class="swiper-slide">
-                            <div class="book">
-                                <a href="#">
-                                <span class="book__test"></span>
-                                <div class="book__badge">
-                                    <p class="book__badge__text">-49%</p>
-                                </div>
-                                <img src="img/img04.png" alt="Some book 4" class="book__img">
-                                <div class="book__details">
-                                    <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
-                                    <p class="book__volume">Volumul 1+2</p>
-                                </div>
-                                <div class="book__price">
-                                    <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
-                                    <div class="book__price__new">19.9 Lei</div>
-                                </div>
-                            </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="book">
-                                <a href="#">
-                                <span class="book__test"></span>
-                                <div class="book__badge">
-                                    <p class="book__badge__text">-49%</p>
-                                </div>
-                                <img src="img/img04.png" alt="Some book 4" class="book__img">
-                                <div class="book__details">
-                                    <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
-                                    <p class="book__volume">Volumul 1+2</p>
-                                </div>
-                                <div class="book__price">
-                                    <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
-                                    <div class="book__price__new">19.9 Lei</div>
-                                </div>
-                            </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="book">
-                                <a href="#">
-                                <span class="book__test"></span>
-                                <div class="book__badge">
-                                    <p class="book__badge__text">-49%</p>
-                                </div>
-                                <img src="img/img04.png" alt="Some book 4" class="book__img">
-                                <div class="book__details">
-                                    <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
-                                    <p class="book__volume">Volumul 1+2</p>
-                                </div>
-                                <div class="book__price">
-                                    <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
-                                    <div class="book__price__new">19.9 Lei</div>
-                                </div>
-                            </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="book">
-                                <a href="#">
-                                <span class="book__test"></span>
-                                <div class="book__badge">
-                                    <p class="book__badge__text">-49%</p>
-                                </div>
-                                <img src="img/img04.png" alt="Some book 4" class="book__img">
-                                <div class="book__details">
-                                    <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
-                                    <p class="book__volume">Volumul 1+2</p>
-                                </div>
-                                <div class="book__price">
-                                    <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
-                                    <div class="book__price__new">19.9 Lei</div>
-                                </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="book">
-                                <a href="#">
-                                <span class="book__test"></span>
-                                <div class="book__badge">
-                                    <p class="book__badge__text">-49%</p>
-                                </div>
-                                <img src="img/img04.png" alt="Some book 4" class="book__img">
-                                <div class="book__details">
-                                    <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
-                                    <p class="book__volume">Volumul 1+2</p>
-                                </div>
-                                <div class="book__price">
-                                    <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
-                                    <div class="book__price__new">19.9 Lei</div>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="book">
-                                <a href="#">
-                                <span class="book__test"></span>
-                                <div class="book__badge">
-                                    <p class="book__badge__text">-49%</p>
-                                </div>
-                                <img src="img/img04.png" alt="Some book 4" class="book__img">
-                                <div class="book__details">
-                                    <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
-                                    <p class="book__volume">Volumul 1+2</p>
-                                </div>
-                                <div class="book__price">
-                                    <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
-                                    <div class="book__price__new">19.9 Lei</div>
-                                </div>
-                                </a>
-                            </div>
+                            <img src="img/img01.png" alt="Carte 1" class="swiper-img">
                         </div>
                     </div>
-                    <!-- Add Pagination -->
+                    <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
-                    <!-- Add Navigation -->
+
+                    <!-- If we need navigation buttons -->
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
                 </div>
+                <!-- Slider main container -->
+                <div class="details__bonus__extra">
+                    <h2 class="details__bonus__extra__title">Bonus:</h2>
+
+                    <a href="#" class="details__bonus__extra--link">
+                        <i class="details__bonus__extra--icon icon-scrisoare"></i>
+                        Scrisoare
+                    </a>
+                    <a href="#" class="details__bonus__extra--link">
+                        <i class="details__bonus__extra--icon icon-cadou"></i>
+                        Cadou
+                    </a>
+                    <a href="#" class="details__bonus__extra--link">
+                        <i class="details__bonus__extra--icon icon-nou"></i>
+                        Nou
+                    </a>
+                </div>
+                <!-- ./-- details-bonus-extra -->
+                <div class="details__bonus__read">
+                    <a href="#" class="details__bonus__read__link">
+                        <i class="icon-rasfoieste_cartea"></i>
+                        Răsfoiește
+                    </a>
+                </div>
+                <!-- ./-- details-bonus-read -->
             </div>
-            <!-- ./-- slider-wrap -->
-            <div class="main-wrap">
-                <h1>SOme text</h1>
-                <div class="container">
-                    <div class="container__wrap">
-                        <div class="product">
-                            <div class="product__badge">
-                                <p class="product__badge__text">-49%</p>
-                            </div>
-                            <img src="img/img04.png" alt="Some book 4" class="book__img">
-                            <div class="book__details">
-                                <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
-                                <p class="book__volume">Volumul 1+2</p>
-                            </div>
-                            <div class="book__price">
-                                <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
-                                <div class="book__price__new">19.9 Lei</div>
-                            </div>
-                            <div class="book__add">
-                                <a class="btn btn-cart">
-                                    <i class="icon-adauga_in_cos btn-ico"></i>
-                                    <p class="btn-txt">Adaugă în coș</p>
-                                </a>
-                                <p class="book__left">3 produse rămase</p>
-                            </div>
+            <!-- ./-- carousel-slide with mini-notif-buttons -->
+            <div class="banner">
+                <img src="img/banner.png" alt="Banner Demo 1" class="banner__img banner__img--desktop">
+                <img src="img/extra23.png" alt="Banner Demo 2" class="banner__img banner__img--mobile">
+            </div>
+            <!-- ./-- banner -->
+            <div class="details">
+                <div class="details__title">
+                    <a href="#" class="details__title__book">Dama de Treflă</a>
+                    <h1 class="details__title__name">Pachet "Dama de Treflă" cu titlul lung tip rezumat de carte</h1>
+                    <span class="details__title__volumes">Volumul 1 + 2</span>
+                </div>
+                <!-- ./-- details-title -->
+                <div class="details__info">
+                    <div class='details__info__rating'>
+                        <div class="details__info__rate">
+                            <i class="icon-stea_filled"></i>
+                            <i class="icon-stea_filled"></i>
+                            <i class="icon-stea_filled"></i>
+                            <i class="icon-stea_filled"></i>
+                            <i class="icon-stea_empty"></i>
                         </div>
-                        <!-- ./-product -->
-                        <div class="product">
-                            <div class="product__badge">
-                                <p class="product__badge__text">-49%</p>
-                            </div>
-                            <img src="img/img04.png" alt="Some book 4" class="book__img">
-                            <div class="book__details">
-                                <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
-                                <p class="book__volume">Volumul 1+2</p>
-                            </div>
-                            <div class="book__price">
-                                <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
-                                <div class="book__price__new">19.9 Lei</div>
-                            </div>
-                            <div class="book__add">
-                                <a class="btn btn-cart">
-                                    <i class="icon-adauga_in_cos btn-ico"></i>
-                                    <p class="btn-txt">Adaugă în coș</p>
-                                </a>
-                                <p class="book__left">3 produse rămase</p>
-                            </div>
+
+                        <a href='#' class='details__info__rating-rate'>4.80 (25 de review-uri)</a>
+                    </div>
+                    <!-- ./-- details-info - rating -->
+                    <div class="details__info__price">
+                        <div class="details__info__price__old">
+                            <span class="details__info__price__old--cut">78lei</span>
+                            <span class="details__info__price__old--percent">-50%</span>
                         </div>
-                        <!-- ./-product -->
-                        <div class="product">
-                            <div class="product__badge">
-                                <p class="product__badge__text">-49%</p>
-                            </div>
-                            <img src="img/img04.png" alt="Some book 4" class="book__img">
-                            <div class="book__details">
-                                <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
-                                <p class="book__volume">Volumul 1+2</p>
-                            </div>
-                            <div class="book__price">
-                                <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
-                                <div class="book__price__new">19.9 Lei</div>
-                            </div>
-                            <div class="book__add">
-                                <a class="btn btn-cart">
-                                    <i class="icon-adauga_in_cos btn-ico"></i>
-                                    <p class="btn-txt">Adaugă în coș</p>
-                                </a>
-                                <p class="book__left">3 produse rămase</p>
-                            </div>
+                        <h2 class="details__info__price__new">39lei</h2>
+                    </div>
+                    <!-- ./-- details-price -->
+                </div>
+                <!-- ./-- details-info -->
+                <div class="details__bonus">
+                    <p class="details__bonus__text">
+                        Dama de Treflă e mai mult decât o poveste. E un destin care-și caută, independent, pașii.
+                    </p>
+                    <div class="details__bonus__sticker">
+                        <p class="details__bonus__sticker--text">
+                            10% Extra-reducere la prețul afișat. Folosește codul timpdecitit în coș.
+                        </p>
+                        <i class="details__bonus__sticker--icon icon-ribbon_reducere"></i>
+                    </div>
+                    <!-- ./-- details-bonus-sticker -->
+                </div>
+                <!-- ./-- details-bonus -->
+                <div class="details__purchase">
+                    <button class="btn btn-cart">
+                        <i class="btn-ico btn-ico--red icon-adauga_in_cos"></i>
+                        <p class="btn-txt">Adaugă în coș</p>
+                    </button>
+                    <button class="btn btn-wish">
+                        <i class="btn-ico btn-ico--grey icon-heart_line"></i>
+                        <p class="btn-txt">Adaugă în wishlist</p>
+                    </button>
+                </div>
+                <!-- ./-- details-purchase (includes add to cart and wishlist) -->
+                <div class="details__package">
+                    <div class="details__package__section">
+                        <i class="details__package__section__icon icon-comanda_prin_telefon"></i>
+                        <div class="details__package__section__box">
+                            <p class="details__package__section__text">Comandă prin telefon</p>
+                            <p class="details__package__section__text">0770-584.429</p>
                         </div>
-                        <!-- ./-product -->
-                        <div class="product">
-                            <div class="product__badge">
-                                <p class="product__badge__text">-49%</p>
-                            </div>
-                            <img src="img/img04.png" alt="Some book 4" class="book__img">
-                            <div class="book__details">
-                                <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
-                                <p class="book__volume">Volumul 1+2</p>
-                            </div>
-                            <div class="book__price">
-                                <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
-                                <div class="book__price__new">19.9 Lei</div>
-                            </div>
-                            <div class="book__add">
-                                <a class="btn btn-cart">
-                                    <i class="icon-adauga_in_cos btn-ico"></i>
-                                    <p class="btn-txt">Adaugă în coș</p>
-                                </a>
-                                <p class="book__left">3 produse rămase</p>
-                            </div>
+                        <p class="details__package__section__text">L-V 09:30 - 17:30</p>
+                    </div>
+                    <!-- ./-- details-package-order -->
+                    <div class="details__package__section">
+                        <i class="details__package__section__icon icon-livrare"></i>
+                        <div class="details__package__section__box">
+                            <p class="details__package__section__text">Livrare în România</p>
+                            <p class="details__package__section__text details__package__section__text--green">Vineri, 3 Aprilie</p>
                         </div>
-                        <!-- ./-product -->
-                        <div class="product product--large">
-                            <div class="product__badge product__badge--large">
-                                <p class="product__badge__text">-49%</p>
-                            </div>
-                            <img src="img/img04.png" alt="Some book 4" class="book__img book__img--large">
-                            <div class="book__details">
-                                <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
-                                <p class="book__volume">Volumul 1+2</p>
-                            </div>
-                            <div class="book__wrap">
-                                <div class="book__price">
-                                    <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
-                                    <div class="book__price__new">19.9 Lei</div>
-                                </div>
-                                <div class="book__add book__add--large">
-                                    <a class="btn btn-cart">
-                                        <i class="icon-adauga_in_cos btn-ico"></i>
-                                        <p class="btn-txt">Adaugă în coș</p>
-                                    </a>
-                                    <p class="book__left">3 produse rămase</p>
+                        <p class="details__package__section__text">10.9 Lei</p>
+                    </div>
+                    <!-- ./-- details-package-delivery -->
+                </div>
+                <!-- ./-- details-package -->
+                <div class="packs">
+                    <h2 class="packs__title">Pachetul conține</h2>
+                    <!-- Slider main container -->
+                    <div class="swiper-container swiper-packs">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide swiper-slide-packs">
+                                <div class="swiper-pack">
+                                    <img src="img/img03.png" alt="Carte 1" class="swiper-pack-img">
+                                    <p class="swiper-pack-text swiper-pack-text--title">Dama de Treflă</p>
+                                    <p class="swiper-pack-text swiper-pack-text--vol">Volumul 1</p>
+                                    <p class="swiper-pack-text swiper-pack-text--old">39 Lei</p>
+                                    <p class="swiper-pack-text swiper-pack-text--price">27 Lei</p>
                                 </div>
                             </div>
-                        </div>
-                        <!-- ./-product -->
-                        <div class="product">
-                            <div class="product__badge">
-                                <p class="product__badge__text">-49%</p>
-                            </div>
-                            <img src="img/img04.png" alt="Some book 4" class="book__img">
-                            <div class="book__details">
-                                <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
-                                <p class="book__volume">Volumul 1+2</p>
-                            </div>
-                            <div class="book__price">
-                                <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
-                                <div class="book__price__new">19.9 Lei</div>
-                            </div>
-                            <div class="book__add">
-                                <a class="btn btn-cart">
-                                    <i class="icon-adauga_in_cos btn-ico"></i>
-                                    <p class="btn-txt">Adaugă în coș</p>
-                                </a>
-                                <p class="book__left">3 produse rămase</p>
-                            </div>
-                        </div>
-                        <!-- ./-product -->
-                        <div class="product product--large">
-                            <div class="product__badge product__badge--large">
-                                <p class="product__badge__text">-49%</p>
-                            </div>
-                            <img src="img/img04.png" alt="Some book 4" class="book__img book__img--large">
-                            <div class="book__details">
-                                <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
-                                <p class="book__volume">Volumul 1+2</p>
-                            </div>
-                            <div class="book__wrap">
-                                <div class="book__price">
-                                    <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
-                                    <div class="book__price__new">19.9 Lei</div>
+                            <div class="swiper-slide swiper-slide-packs">
+                                <div class="swiper-pack">
+                                    <img src="img/img02.png" alt="Carte 2" class="swiper-pack-img">
+                                    <p class="swiper-pack-text swiper-pack-text--title">Dama de Treflă</p>
+                                    <p class="swiper-pack-text swiper-pack-text--vol">Volumul 1</p>
+                                    <p class="swiper-pack-text swiper-pack-text--old">39 Lei</p>
+                                    <p class="swiper-pack-text swiper-pack-text--price">27 Lei</p>
                                 </div>
-                                <div class="book__add book__add--large">
-                                    <a class="btn btn-cart">
-                                        <i class="icon-adauga_in_cos btn-ico"></i>
-                                        <p class="btn-txt">Adaugă în coș</p>
-                                    </a>
-                                    <p class="book__left">3 produse rămase</p>
+                            </div>
+                            <div class="swiper-slide swiper-slide-packs">
+                                <div class="swiper-pack">
+                                    <img src="img/img03.png" alt="Carte 3" class="swiper-pack-img">
+                                    <p class="swiper-pack-text swiper-pack-text--title">Dama de Treflă</p>
+                                    <p class="swiper-pack-text swiper-pack-text--vol">Volumul 1</p>
+                                    <p class="swiper-pack-text swiper-pack-text--old">39 Lei</p>
+                                    <p class="swiper-pack-text swiper-pack-text--price">27 Lei</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-packs">
+                                <div class="swiper-pack">
+                                    <img src="img/img02.png" alt="Carte 4" class="swiper-pack-img">
+                                    <p class="swiper-pack-text swiper-pack-text--title">Dama de Treflă</p>
+                                    <p class="swiper-pack-text swiper-pack-text--vol">Volumul 1</p>
+                                    <p class="swiper-pack-text swiper-pack-text--old">39 Lei</p>
+                                    <p class="swiper-pack-text swiper-pack-text--price">27 Lei</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-packs">
+                                <div class="swiper-pack">
+                                    <img src="img/img03.png" alt="Carte 5" class="swiper-pack-img">
+                                    <p class="swiper-pack-text swiper-pack-text--title">Dama de Treflă</p>
+                                    <p class="swiper-pack-text swiper-pack-text--vol">Volumul 1</p>
+                                    <p class="swiper-pack-text swiper-pack-text--old">39 Lei</p>
+                                    <p class="swiper-pack-text swiper-pack-text--price">27 Lei</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- ./-product -->
-                        <div class="product">
-                            <div class="product__badge">
-                                <p class="product__badge__text">-49%</p>
-                            </div>
-                            <img src="img/img04.png" alt="Some book 4" class="book__img">
-                            <div class="book__details">
-                                <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
-                                <p class="book__volume">Volumul 1+2</p>
-                            </div>
-                            <div class="book__price">
-                                <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
-                                <div class="book__price__new">19.9 Lei</div>
-                            </div>
-                            <div class="book__add">
-                                <a class="btn btn-cart">
-                                    <i class="icon-adauga_in_cos btn-ico"></i>
-                                    <p class="btn-txt">Adaugă în coș</p>
-                                </a>
-                                <p class="book__left">3 produse rămase</p>
-                            </div>
-                        </div>
-                        <!-- ./-product -->
-                        <div class="product">
-                            <div class="product__badge">
-                                <p class="product__badge__text">-49%</p>
-                            </div>
-                            <img src="img/img04.png" alt="Some book 4" class="book__img">
-                            <div class="book__details">
-                                <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
-                                <p class="book__volume">Volumul 1+2</p>
-                            </div>
-                            <div class="book__price">
-                                <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
-                                <div class="book__price__new">19.9 Lei</div>
-                            </div>
-                            <div class="book__add">
-                                <a class="btn btn-cart">
-                                    <i class="icon-adauga_in_cos btn-ico"></i>
-                                    <p class="btn-txt">Adaugă în coș</p>
-                                </a>
-                                <p class="book__left">3 produse rămase</p>
-                            </div>
-                        </div>
-                        <!-- ./-product -->
-                        <div class="product">
-                            <div class="product__badge">
-                                <p class="product__badge__text">-49%</p>
-                            </div>
-                            <img src="img/img04.png" alt="Some book 4" class="book__img">
-                            <div class="book__details">
-                                <h2 class="book__title">Pachet "Confesiunile unei fete rele”</h2>
-                                <p class="book__volume">Volumul 1+2</p>
-                            </div>
-                            <div class="book__price">
-                                <div class="book__price__old">39 Lei <span class="book__price__old--deduction">(-49%)</span></div>
-                                <div class="book__price__new">19.9 Lei</div>
-                            </div>
-                            <div class="book__add">
-                                <a class="btn btn-cart">
-                                    <i class="icon-adauga_in_cos btn-ico"></i>
-                                    <p class="btn-txt">Adaugă în coș</p>
-                                </a>
-                                <p class="book__left">3 produse rămase</p>
-                            </div>
-                        </div>
-                        <!-- ./-product -->
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- If we need scrollbar -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
                     </div>
                 </div>
-                <!-- ./--container -->
+                <!-- ./-- package- -->
             </div>
-        </main>
-        <!-- ./-- container -->
-        <a href="#top" class="back-to-top">
-            <i class="icon-arrow_up_long back-to-top__csarr"></i>
-        </a>
-        <!-- ./-- footer -->
+            <!-- ./-- content details -->
+            <div class="description">
+                <div class="description__tabs">
+                    <button class="description__tabs__btn description__tabs__btn--active" data-id="descriere">Descriere</button>
+                    <button class="description__tabs__btn" data-id="autor">Despre autor</button>
+                    <button class="description__tabs__btn" data-id="specificatii">Specificații</button>
+                </div>
+                <div class="description__content">
+                    <div class="description__content__box description__content__box--active" id="descriere">
+                        <i>"Dama de Treflă"</i> este un roman cu incertitudini și răspunsuri. Un roman despre libertate și alegeri, despre iubire și durere, despre oameni și fluturi în stomac, despre suflet și dor. Nu este doar o carte din categoria de cărți de dragoste, ci o poveste de viață, care te invită să o descoperi pe Dama de Treflă, să treci alături de ea prin suferințele și prin momentele frumoase din viața ei. Este o poveste de suflet, pentru suflet și cu suflet. Poate că vei citi despre sentimente care au fost prezente și în viața ta, poate că vei afla multitudinea perspectivelor pentru diferite situații din viața ta sau poate că pur și simplu te vei transpune în poveștile de dragoste din carte și vei ajunge să simți totul la fel de intens ca personajele.
+                        <div class="popup__toggle">
+                            <a href="#" class="btn btn-specs view-desc">Vezi toata descrierea</a>
+                        </div>
+                    </div>
+                    <div class="description__content__box" id="autor">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quos laborum quia aspernatur provident, nihil, totam cum nisi numquam fugiat amet porro maiores aperiam eius necessitatibus voluptatum distinctio facilis dolore ad iste modi quo. Voluptas repellat laborum neque aliquid enim quibusdam ad eveniet unde est eius. Recusandae provident facere consequuntur?
+                    </div>
+                    <div class="description__content__box" id="specificatii">
+                        <ul class="specs">
+                            <li class="specs__item specs__item-prev">
+                                <span class="specs__item__item">Dama de trefla volum 1</span>
+                            </li>
+                            <li class="specs__item">
+                                <span class="specs__item__cat">Editura</span>
+                                <span class="specs__item__item">Bookzone</span>
+                            </li>
+                            <li class="specs__item">
+                                <span class="specs__item__cat">Autor</span>
+                                <span class="specs__item__item">Dama de Treflă nume pe doua randuri</span>
+                            </li>
+                            <li class="specs__item">
+                                <span class="specs__item__cat">Nr. de pagini</span>
+                                <span class="specs__item__item">254</span>
+                            </li>
+                            <li class="specs__item">
+                                <span class="specs__item__cat">Anul apariției</span>
+                                <span class="specs__item__item">2019</span>
+                            </li>
+                            <li class="specs__item">
+                                <span class="specs__item__cat">ISBN</span>
+                                <span class="specs__item__item">1546585634221</span>
+                            </li>
+                            <li class="specs__item">
+                                <span class="specs__item__cat">Categoria</span>
+                                <span class="specs__item__item">Cărți de dragoste</span>
+                            </li>
+                            <li class="specs__item">
+                                <span class="specs__item__cat">Editia</span>
+                                <span class="specs__item__item">Softcover</span>
+                            </li>
+                        </ul>
+                        <div class="popup__toggle">
+                            <a href="#" class="btn btn-specs view-specs">Vezi toate specificatiile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./ -- description -->
+            <div class="banner2">
+                <img src="img/banner2.png" alt="Banner Demo" class="banner2__img2">
+            </div>
+            <!-- ./-- banner ads2 -->
+            <div class="recommended">
+                <div class="recommended__wrap">   
+                    <h2 class="recommended__title">Îți recomandăm</h2>
+                    <div class="recommended__item recommended__item--1">
+                        <div class="recommended__content">
+                            <div class="recommended__content__box">
+                                <img src="img/img02.png" alt="book2" class="recommended__content__box__img">
+                                <div class="recommended__content__box__details">
+                                    <p class="recommended__content__box__details__title">Dama de Treflă</p>
+                                    <p class="recommended__content__box__details__text">Volumul 1</p>
+                                    <p class="recommended__content__box__details__price">
+                                    <p class="recommended__content__box__details__price">
+                                        <span class="recommended__content__box__details__price--old">39 Lei</span>
+                                        <span class="recommended__content__box__details__price--new">27.3 Lei</span>
+                                        <span class="recommended__content__box__details__price--percent">-30%</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="recommended__content__box">
+                                <img src="img/img03.png" alt="book3" class="recommended__content__box__img">
+                                <div class="recommended__content__box__details">
+                                    <p class="recommended__content__box__details__title">Dama de Treflă</p>
+                                    <p class="recommended__content__box__details__text">Volumul 1</p>
+                                    <p class="recommended__content__box__details__price">
+                                        <p class="recommended__content__box__details__price">
+                                            <span class="recommended__content__box__details__price--old">39 Lei</span>
+                                            <span class="recommended__content__box__details__price--new">27.3 Lei</span>
+                                            <span class="recommended__content__box__details__price--percent">-30%</span>
+                                        </p>
+                                </div>
+                            </div>
+                            <div class="recommended__content__box">
+                                <img src="img/img02.png" alt="book2" class="recommended__content__box__img">
+                                <div class="recommended__content__box__details">
+                                    <p class="recommended__content__box__details__title">Dama de Treflă</p>
+                                    <p class="recommended__content__box__details__text">Volumul 1</p>
+                                    <p class="recommended__content__box__details__price">
+                                        <span class="recommended__content__box__details__price--old">39 Lei</span>
+                                        <span class="recommended__content__box__details__price--new">27.3 Lei</span>
+                                        <span class="recommended__content__box__details__price--percent">-30%</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./-- content -->
+                        <div class="recommended__pay">
+                            <div class="recommended__pay__box">
+                                <p class="recommended__pay__box__text">Pret de listă</p>
+                                <p class="recommended__pay__box__price recommended__pay__box__price--lt">117Lei</p>
+                            </div>
+                            <div class="recommended__pay__box">
+                                <p class="recommended__pay__box__text">Pret actual</p>
+                                <p class="recommended__pay__box__price recommended__pay__box__price--r recommended__pay__box__price--w">81.9 Lei</p>
+                            </div>
+                            <div class="recommended__pay__box">
+                                <p class="recommended__pay__box__text recommended__pay__box__text--c">Doar aici</p>
+                                <p class="recommended__pay__box__price recommended__pay__box__price--w">57.33 Lei</p>
+                            </div>
+                            <div class="recommended__pay__box">
+                                <button class="btn btn-cart">
+                                    <i class="btn-ico btn-ico--red icon-adauga_in_cos"></i>
+                                    <p class="btn-txt">Adaugă în coș</p>
+                                </button>
+                            </div>
+                            <div class="recommended__pay__box">
+                                <p class="recommended__pay__box__text--savings">Economisești 48.8 Lei</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./-- wrap -->
+                    <div class="recommended__hidden">
+                        <div class="recommended__item recommended__item--2">
+                            <div class="recommended__content">
+                                <div class="recommended__content__box">
+                                    <img src="img/img02.png" alt="book2" class="recommended__content__box__img">
+                                    <div class="recommended__content__box__details">
+                                        <p class="recommended__content__box__details__title">Dama de Treflă</p>
+                                        <p class="recommended__content__box__details__text">Volumul 1</p>
+                                        <p class="recommended__content__box__details__price">
+                                            <span class="recommended__content__box__details__price--old">39 Lei</span>
+                                            <span class="recommended__content__box__details__price--new">27.3 Lei</span>
+                                            <span class="recommended__content__box__details__price--percent">-30%</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="recommended__content__box">
+                                    <img src="img/img03.png" alt="book3" class="recommended__content__box__img">
+                                    <div class="recommended__content__box__details">
+                                        <p class="recommended__content__box__details__title">Dama de Treflă</p>
+                                        <p class="recommended__content__box__details__text">Volumul 1</p>
+                                        <p class="recommended__content__box__details__price">
+                                            <span class="recommended__content__box__details__price--old">39 Lei</span>
+                                            <span class="recommended__content__box__details__price--new">27.3 Lei</span>
+                                            <span class="recommended__content__box__details__price--percent">-30%</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="recommended__content__box">
+                                    <img src="img/img02.png" alt="book2" class="recommended__content__box__img">
+                                    <div class="recommended__content__box__details">
+                                        <p class="recommended__content__box__details__title">Dama de Treflă</p>
+                                        <p class="recommended__content__box__details__text">Volumul 1</p>
+                                        <p class="recommended__content__box__details__price">
+                                            <span class="recommended__content__box__details__price--old">39 Lei</span>
+                                            <span class="recommended__content__box__details__price--new">27.3 Lei</span>
+                                            <span class="recommended__content__box__details__price--percent">-30%</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./-- content -->
+                            <div class="recommended__pay">
+                                <div class="recommended__pay__box">
+                                    <p class="recommended__pay__box__text">Pret de listă</p>
+                                    <p class="recommended__pay__box__price recommended__pay__box__price--lt">117Lei</p>
+                                </div>
+                                <div class="recommended__pay__box">
+                                    <p class="recommended__pay__box__text">Pret actual</p>
+                                    <p class="recommended__pay__box__price recommended__pay__box__price--r recommended__pay__box__price--w">81.9 Lei</p>
+                                </div>
+                                <div class="recommended__pay__box">
+                                    <p class="recommended__pay__box__text recommended__pay__box__text--c">Doar aici</p>
+                                    <p class="recommended__pay__box__price recommended__pay__box__price--w">57.33 Lei</p>
+                                </div>
+                                <div class="recommended__pay__box">
+                                    <button class="btn btn-cart">
+                                        <i class="btn-ico btn-ico--red icon-adauga_in_cos"></i>
+                                        <p class="btn-txt">Adaugă în coș</p>
+                                    </button>
+                                </div>
+                                <div class="recommended__pay__box">
+                                    <p class="recommended__pay__box__text--savings">Economisești 48.8 Lei</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./-- wrap -->
+                        <div class="recommended__item recommended__item--3">
+                            <div class="recommended__content">
+                                <div class="recommended__content__box">
+                                    <img src="img/img02.png" alt="book2" class="recommended__content__box__img">
+                                    <div class="recommended__content__box__details">
+                                        <p class="recommended__content__box__details__title">Dama de Treflă</p>
+                                        <p class="recommended__content__box__details__text">Volumul 1</p>
+                                        <p class="recommended__content__box__details__price">
+                                            <span class="recommended__content__box__details__price--old">39 Lei</span>
+                                            <span class="recommended__content__box__details__price--new">27.3 Lei</span>
+                                            <span class="recommended__content__box__details__price--percent">-30%</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="recommended__content__box">
+                                    <img src="img/img03.png" alt="book3" class="recommended__content__box__img">
+                                    <div class="recommended__content__box__details">
+                                        <p class="recommended__content__box__details__title">Dama de Treflă</p>
+                                        <p class="recommended__content__box__details__text">Volumul 1</p>
+                                        <p class="recommended__content__box__details__price">
+                                            <span class="recommended__content__box__details__price--old">39 Lei</span>
+                                            <span class="recommended__content__box__details__price--new">27.3 Lei</span>
+                                            <span class="recommended__content__box__details__price--percent">-30%</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="recommended__content__box">
+                                    <img src="img/img02.png" alt="book2" class="recommended__content__box__img">
+                                    <div class="recommended__content__box__details">
+                                        <p class="recommended__content__box__details__title">Dama de Treflă</p>
+                                        <p class="recommended__content__box__details__text">Volumul 1</p>
+                                        <p class="recommended__content__box__details__price">
+                                            <span class="recommended__content__box__details__price--old">39 Lei</span>
+                                            <span class="recommended__content__box__details__price--new">27.3 Lei</span>
+                                            <span class="recommended__content__box__details__price--percent">-30%</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./-- content -->
+                            <div class="recommended__pay">
+                                <div class="recommended__pay__box">
+                                    <p class="recommended__pay__box__text">Pret de listă</p>
+                                    <p class="recommended__pay__box__price recommended__pay__box__price--lt">117Lei</p>
+                                </div>
+                                <div class="recommended__pay__box">
+                                    <p class="recommended__pay__box__text">Pret actual</p>
+                                    <p class="recommended__pay__box__price recommended__pay__box__price--r recommended__pay__box__price--w">81.9 Lei</p>
+                                </div>
+                                <div class="recommended__pay__box">
+                                    <p class="recommended__pay__box__text recommended__pay__box__text--c">Doar aici</p>
+                                    <p class="recommended__pay__box__price recommended__pay__box__price--w">57.33 Lei</p>
+                                </div>
+                                <div class="recommended__pay__box">
+                                    <button class="btn btn-cart">
+                                        <i class="btn-ico btn-ico--red icon-adauga_in_cos"></i>
+                                        <p class="btn-txt">Adaugă în coș</p>
+                                    </button>
+                                </div>
+                                <div class="recommended__pay__box">
+                                    <p class="recommended__pay__box__text--savings">Economisești 48.8 Lei</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./-- wrap -->
+                    </div>
+                    <!-- ./-- hidden recommended -->
+                    <div class="recommended__btn">
+                        <a href="#" class="btn btn-outline btn-show">Vezi toate recomandările</a>
+                    </div>
+                    <!-- ./-- recommend btn -->
+                </div>
+            </div>
+            <!-- ./-- recommended -->
+            <div class="filters filters-recommend">
+                <div class="filters__wrap">
+                    <h2 class="filters__title">Ți-ar plăcea și</h2>
+                    <!-- Swiper -->
+                    <div class="swiper-container swiper-recommend">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img04.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei <span class="filters__item__price--percent">(-49%)</span></p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img05.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img05.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img06.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img05.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img04.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img03.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img02.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img04.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img02.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img03.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img05.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next sw-next"></div>
+                        <div class="swiper-button-prev sw-prev"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./ -- filters filters-recommend -->
+            <div class="filters filters-frequent">
+                <div class="filters__wrap">
+                    <h2 class="filters__title">Frecvent cumpărate împreună</h2>
+                    <!-- Swiper -->
+                    <div class="swiper-container swiper-recommend">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img04.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei <span class="filters__item__price--percent">(-49%)</span></p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img05.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img05.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img06.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img05.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img04.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img03.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img02.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img04.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img02.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img03.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img05.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next sw-next"></div>
+                        <div class="swiper-button-prev sw-prev"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./ -- filters filters-frequent -->
+            <div class="filters filters-others">
+                <div class="filters__wrap">
+                    <h2 class="filters__title">Alții au cumpărat și</h2>
+                    <!-- Swiper -->
+                    <div class="swiper-container swiper-recommend">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img04.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei <span class="filters__item__price--percent">(-49%)</span></p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img05.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img05.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img06.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img05.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img04.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img03.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img02.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img04.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img02.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img03.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="filters__item">
+                                    <img src="img/img05.png" alt="Book4" class="filters__img">
+                                    <div class="filters__text">
+                                        <p class="filters__item__title">Mai presus de el</p>
+                                        <p class="filters__item__volume">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="filters__item__price--old">39 Lei (-49%)</p>
+                                        <p class="filters__item__price--new">19.9 Lei</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next sw-next"></div>
+                        <div class="swiper-button-prev sw-prev"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./ -- filters filters-others -->
+            <div class="comments">
+                <div class="comments__header">
+                    <h2 class="comments__header__title">Recenzii</h2>
+                    <div class="comments__header__box">
+                        <h2 class="comments__header__box__title">Ți-a plăcut produsul?</h2>
+                        <p class="comments__header__box__text">Spune tuturor părerea ta aici.</p>
+                        <div class="comments__header__box__cta">
+                            <a class="btn btn-wish-comments btn-wish-comments--center view-review">Scrie o recenzie</a>
+                        </div>
+                    </div>
+                    <div class="comments__header__overall">
+                        <h2 class="comments__header__overall__average">4.80</h2>
+                        <div class="comments__header__overall__stars">
+                            <i class="icon-stea_filled"></i>
+                            <i class="icon-stea_filled"></i>
+                            <i class="icon-stea_filled"></i>
+                            <i class="icon-stea_filled"></i>
+                            <i class="icon-stea_empty"></i>
+                        </div>
+                        <p class="comments__header__overall__text">25 de recenzii</p>
+                    </div>
+                    <div class="comments__header__stats">
+                        <div class="comments__header__stat">
+                            <a href="#" class="comments__header__stars">5 stele</a>
+                            <span class="comments__header__bar"></span>
+                            <a href="" class="comments__header__count">15</a>
+                        </div>
+                        <div class="comments__header__stat">
+                            <a href="#" class="comments__header__stars">4 stele</a>
+                            <span class="comments__header__bar"></span>
+                            <a href="" class="comments__header__count">6</a>
+                        </div>
+                        <div class="comments__header__stat">
+                            <a href="#" class="comments__header__stars">3 stele</a>
+                            <span class="comments__header__bar"></span>
+                            <a href="" class="comments__header__count">4</a>
+                        </div>
+                        <div class="comments__header__stat">
+                            <a href="#" class="comments__header__stars">2 stele</a>
+                            <span class="comments__header__bar"></span>
+                            <a href="" class="comments__header__count">0</a>
+                        </div>
+                        <div class="comments__header__stat">
+                            <a href="#" class="comments__header__stars">1 stele</a>
+                            <span class="comments__header__bar"></span>
+                            <a href="" class="comments__header__count">0</a>
+                        </div>
+                    </div>
+                    <div class="comments__header__filters">
+                        <div class="comments__header__filters__filter">
+                            <p class="comments__header__filters__text">Sortează după</p>
+                            <select name="filter_sort" id="filter_sort" class="dropdown">
+                                <option value="cele-mai-populare">Cele mai populare</option>
+                                <option value="cele-mai-populare">Cele mai populare</option>
+                                <option value="cele-mai-populare">Cele mai populare</option>
+                            </select>
+                        </div>
+                        <div class="comments__header__filters__filter">
+                            <p class="comments__header__filters__text">Filtrează după</p>
+                            <select name="filter_filter" id="filter_filter" class="dropdown">
+                                <option value="cele-mai-populare">Cele mai populare</option>
+                                <option value="cele-mai-populare">Cele mai populare</option>
+                                <option value="cele-mai-populare">Cele mai populare</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./-- comments__header -->
+                <div class="comments__content">
+                    <div class="comment">
+                        <span class="comment__avatar comment__avatar--yellow">
+                            <b>N</b>
+                        </span>
+                        <div class="comment__wrap">
+                            <div class="comment__user">
+                                <div class="comment__user__stats">
+                                    <div class="comment__user__wrap">
+                                        <p class="comment__user__name">Nedelcu Alexandru</p>
+                                        <div class="comment__user__rating">
+                                            <i class="icon-stea_filled"></i>
+                                            <i class="icon-stea_filled"></i>
+                                            <i class="icon-stea_filled"></i>
+                                            <i class="icon-stea_filled"></i>
+                                            <i class="icon-stea_filled"></i>
+                                        </div>
+                                    </div>
+                                    <p class="comment__user__date">14 Apr 2020</p>
+                                </div>
+                            </div>
+                            <div class="comment__details">
+                                <h2 class="comment__details__title">Extraordinara!!!</h2>
+                                <p class="comment__details__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea molestiae, exercitationem minima vero facere aperiam blanditiis quam magnam obcaecati excepturi, sint, nihil deleniti.</p>
+                            </div>
+                            <div class="comment__input">
+                                <a href="" class="comment__input__cat comment-like">
+                                    <i class="icon-like comment__input__ico"></i>
+                                    <p class="comment__input__text">924</p>
+                                </a>
+                                <a href="" class="comment__input__cat comment-reply">
+                                    <i class="icon-comenteaza comment__input__ico"></i>
+                                    <p class="comment__input__text" data-id="comment-reply">Comenteaza</p>
+                                </a>
+                                <a href="" class="comment__input__cat comment-replies">
+                                    <i class="icon-comentarii comment__input__ico"></i>
+                                    <p class="comment__input__text" data-id="comment-replies">Comentarii(0)</p>
+                                </a>
+                            </div>
+
+                            <div class="comment__replies">
+                                <div class="comment__replies__content">
+                                    <span class="comment__avatar comment__avatar--yellow">
+                                        <b>N</b>
+                                    </span>
+                                    <div class="comment__replies__wrap">
+                                        <div class="comment__replies__content__user">
+                                            <h2 class="comment__replies__content__username">Ana Maria Ionescu</h2>
+                                            <p class="comment__replies__content__date">12 Apr 2020</p>
+                                        </div>
+                                        <div class="comment__replies__content__text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit maecenas condimentum dui sit amet porttitor tristique nulla facilisi.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment__reply">
+                                <span class="comment__avatar comment__avatar--yellow">
+                                    <b>N</b>
+                                </span>
+                                <div class="comment__reply__wrap">
+                                    <div class="comment__reply__content__user">
+                                        <h2 class="comment__reply__content__username">Adauga comentariu</h2>
+                                    </div>
+                                    <div class="comment__reply__content__text">
+                                        <textarea name="reply" id="reply" placeholder="Scrie comentariul" class="comment__reply__box"></textarea>
+                                    </div>
+                                    <div class="comment__reply__cta">
+                                        <a href="#" class="btn-reply">Publică</a>
+                                        <a href="#" class="btn-cancel">Anulează</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <span class="comment__avatar comment__avatar--green">
+                            <b>P</b>
+                        </span>
+                        <div class="comment__wrap">
+                            <div class="comment__user">
+                                <div class="comment__user__stats">
+                                    <div class="comment__user__wrap">
+                                        <p class="comment__user__name">Popescu Geanina</p>
+                                        <div class="comment__user__rating">
+                                            <i class="icon-stea_filled"></i>
+                                            <i class="icon-stea_filled"></i>
+                                            <i class="icon-stea_filled"></i>
+                                            <i class="icon-stea_filled"></i>
+                                            <i class="icon-stea_empty"></i>
+                                        </div>
+                                    </div>
+                                    <p class="comment__user__date">13 Apr 2020</p>
+                                </div>
+                            </div>
+                            <div class="comment__details">
+                                <h2 class="comment__details__title">Nice!!!</h2>
+                                <p class="comment__details__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea molestiae, exercitationem minima vero facere aperiam blanditiis quam magnam obcaecati excepturi, sint, nihil deleniti.</p>
+                            </div>
+                            <div class="comment__input">
+                                <a href="" class="comment__input__cat comment-like">
+                                    <i class="icon-like comment__input__ico"></i>
+                                    <p class="comment__input__text">924</p>
+                                </a>
+                                <a href="" class="comment__input__cat comment-reply">
+                                    <i class="icon-comenteaza comment__input__ico"></i>
+                                    <p class="comment__input__text" data-id="comment-reply">Comenteaza</p>
+                                </a>
+                                <a href="" class="comment__input__cat comment-replies">
+                                    <i class="icon-comentarii comment__input__ico"></i>
+                                    <p class="comment__input__text" data-id="comment-replies">Comentarii(0)</p>
+                                </a>
+                            </div>
+
+                            <div class="comment__replies">
+                                <div class="comment__replies__content">
+                                    <span class="comment__avatar comment__avatar--yellow">
+                                        <b>N</b>
+                                    </span>
+                                    <div class="comment__replies__wrap">
+                                        <div class="comment__replies__content__user">
+                                            <h2 class="comment__replies__content__username">Ana Maria Ionescu</h2>
+                                            <p class="comment__replies__content__date">12 Apr 2020</p>
+                                        </div>
+                                        <div class="comment__replies__content__text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit maecenas condimentum dui sit amet porttitor tristique nulla facilisi.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment__reply">
+                                <span class="comment__avatar comment__avatar--yellow">
+                                    <b>N</b>
+                                </span>
+                                <div class="comment__reply__wrap">
+                                    <div class="comment__reply__content__user">
+                                        <h2 class="comment__reply__content__username">Adauga comentariu</h2>
+                                    </div>
+                                    <div class="comment__reply__content__text">
+                                        <textarea name="reply" id="reply" placeholder="Scrie comentariul" class="comment__reply__box"></textarea>
+                                    </div>
+                                    <div class="comment__reply__cta">
+                                        <a href="#" class="btn-reply">Publică</a>
+                                        <a href="#" class="btn-cancel">Anulează</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <span class="comment__avatar comment__avatar--turq">
+                            <b>A</b>
+                        </span>
+                        <div class="comment__wrap">
+                            <div class="comment__user">
+                                <div class="comment__user__stats">
+                                    <div class="comment__user__wrap">
+                                        <p class="comment__user__name">Ana Maria Ionescu</p>
+                                        <div class="comment__user__rating">
+                                            <i class="icon-stea_filled"></i>
+                                            <i class="icon-stea_filled"></i>
+                                            <i class="icon-stea_empty"></i>
+                                            <i class="icon-stea_empty"></i>
+                                            <i class="icon-stea_empty"></i>
+                                        </div>
+                                    </div>
+                                    <p class="comment__user__date">12 Apr 2020</p>
+                                </div>
+                            </div>
+                            <div class="comment__details">
+                                <h2 class="comment__details__title">Meh!!!</h2>
+                                <p class="comment__details__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea molestiae, exercitationem minima vero facere aperiam blanditiis quam magnam obcaecati excepturi, sint, nihil deleniti.</p>
+                            </div>
+                            <div class="comment__input">
+                                <a href="" class="comment__input__cat comment-like">
+                                    <i class="icon-like comment__input__ico"></i>
+                                    <p class="comment__input__text">924</p>
+                                </a>
+                                <a href="" class="comment__input__cat comment-reply">
+                                    <i class="icon-comenteaza comment__input__ico"></i>
+                                    <p class="comment__input__text" data-id="comment-reply">Comenteaza</p>
+                                </a>
+                                <a href="" class="comment__input__cat comment-replies">
+                                    <i class="icon-comentarii comment__input__ico"></i>
+                                    <p class="comment__input__text" data-id="comment-replies">Comentarii(0)</p>
+                                </a>
+                            </div>
+
+                            <div class="comment__replies comment-replies--active">
+                                <div class="comment__replies__content">
+                                    <span class="comment__avatar comment__avatar--yellow">
+                                        <b>N</b>
+                                    </span>
+                                    <div class="comment__replies__wrap">
+                                        <div class="comment__replies__content__user">
+                                            <h2 class="comment__replies__content__username">Ana Maria Ionescu</h2>
+                                            <p class="comment__replies__content__date">12 Apr 2020</p>
+                                        </div>
+                                        <div class="comment__replies__content__text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit maecenas condimentum dui sit amet porttitor tristique nulla facilisi.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment__reply">
+                                <span class="comment__avatar comment__avatar--yellow">
+                                    <b>N</b>
+                                </span>
+                                <div class="comment__reply__wrap">
+                                    <div class="comment__reply__content__user">
+                                        <h2 class="comment__reply__content__username">Adauga comentariu</h2>
+                                    </div>
+                                    <div class="comment__reply__content__text">
+                                        <textarea name="reply" id="reply" placeholder="Scrie comentariul" class="comment__reply__box"></textarea>
+                                    </div>
+                                    <div class="comment__reply__cta">
+                                        <a href="#" class="btn-reply">Publică</a>
+                                        <a href="#" class="btn-cancel">Anulează</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./-- comments__content -->
+                <div class="comments__footer">
+                    <div class="comments__header__box comments__header__box--full">
+                        <h2 class="comments__header__box__title">Ți-a plăcut produsul?</h2>
+                        <p class="comments__header__box__text">Spune tuturor părerea ta aici.</p>
+                        <div class="comments__header__box__cta">
+                            <a class="btn btn-wish-comments btn-wish-comments--center view-review">Scrie o recenzie</a>
+                        </div>
+                    </div>
+                    <div class="comments__footer__pagination">
+                        <ul class="pag">
+                            <li class="pag__item"><a href="#" class="pag__link"><i class="icon-arrow_left"></i></a></li>
+                            <li class="pag__item"><a href="#" class="pag__link pag__link--active">1</a></li>
+                            <li class="pag__item"><a href="#" class="pag__link">...</a></li>
+                            <li class="pag__item"><a href="#" class="pag__link">6</a></li>
+                            <li class="pag__item"><a href="#" class="pag__link"><i class="icon-arrow_right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ./-- comments__footer -->
+            </div>
+            <!-- ./ -- comments -->
+            <div class="info">
+                <ul class="info__menu">
+                    <li class="info__list">
+                        <i class="icon-livrare_internationala"></i>
+                        <div class="info__wrap">
+                            <p class="info__text">Livrare internațională</p>
+                            <p class="info__subtext">Cărțile ajung oriunde în lume</p>
+                        </div>
+                    </li>
+                    <li class="info__list">
+                        <i class="icon-dovada_calitatii"></i>
+                        <div class="info__wrap">
+                            <p class="info__text">Dovada calității</p>
+                            <p class="info__subtext">Peste 300.000 de clienți mulțumiți</p>
+                        </div>
+                    </li>
+                    <li class="info__list">
+                        <i class="icon-platesti_in_siguranta2"></i>
+                        <div class="info__wrap">
+                            <p class="info__text">Plătești în siguranță</p>
+                            <p class="info__subtext">Comunicaţii securizate prin SSL</p>
+                        </div>
+                    </li>
+                    <li class="info__list">
+                        <i class="icon-ajutor_prin_telefon"></i>
+                        <div class="info__wrap">
+                            <p class="info__text">Ajutor prin telefon</p>
+                            <p class="info__subtext">De Luni - Vineri 09:30 - 17:30</p>
+                        </div>
+                    </li>
+                    <li class="info__list">
+                        <i class="icon-retur"></i>
+                        <div class="info__wrap">
+                            <p class="info__text">Retur în 30 zile</p>
+                            <p class="info__subtext">De la data primirii produselor</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- ./ -- delivery-info -->
+            <footer class="footer">
+                <div class="footer__menu__brand">
+                    <img src="img/logo_symbol.svg" alt="Bookzone.ro" class="footer__logo">
+                    <ul class="footer__menu">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link" data-id="link-cat">
+                                Categorii
+                                <i class="icon-arrow_down"></i>
+                            </a>
+                            <ul class="footer__submenu" id="link-cat">
+                                <li class="footer__sublist">
+                                    <a href="#" class="footer__sublink">
+                                        Cărți la reducere
+                                    </a>
+                                </li>
+                                <li class="footer__sublist">
+                                    <a href="#" class="footer__sublink">
+                                        Cărți
+                                    </a>
+                                </li>
+                                <li class="footer__sublist">
+                                    <a href="#" class="footer__sublink">
+                                        Pachete speciale
+                                    </a>
+                                </li>
+                                <li class="footer__sublist">
+                                    <a href="#" class="footer__sublink">
+                                        Idei de cadouri
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link" data-id="link-acc">
+                                Contul meu Bookzone
+                                <i class="icon-arrow_down"></i>
+                            </a>
+                            <ul class="footer__submenu" id="link-acc">
+                                <li class="footer__sublist">
+                                    <a href="#" class="footer__sublink">
+                                        Înregistrare
+                                    </a>
+                                </li>
+                                <li class="footer__sublist">
+                                    <a href="#" class="footer__sublink">
+                                        Login
+                                    </a>
+                                </li>
+                                <li class="footer__sublist">
+                                    <a href="#" class="footer__sublink">
+                                        Comenzi
+                                    </a>
+                                </li>
+                                <li class="footer__sublist">
+                                    <a href="#" class="footer__sublink">
+                                        Cadouri
+                                    </a>
+                                </li>
+                                <li class="footer__sublist">
+                                    <a href="#" class="footer__sublink">
+                                        Setări cont
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link" data-id="link-help">
+                                Ajutor online
+                                <i class="icon-arrow_down"></i>
+                            </a>
+                            <ul class="footer__submenu" id="link-help">
+                                <li class="footer__sublist">
+                                    <a href="#" class="footer__sublink">
+                                        Întrebări frecvente
+                                    </a>
+                                </li>
+                                <li class="footer__sublist">
+                                    <a href="#" class="footer__sublink">
+                                        Cum comand?
+                                    </a>
+                                </li>
+                                <li class="footer__sublist">
+                                    <a href="#" class="footer__sublink">
+                                        Livrarea produselor
+                                    </a>
+                                </li>
+                                <li class="footer__sublist">
+                                    <a href="#" class="footer__sublink">
+                                        Modalităţi de plată
+                                    </a>
+                                </li>
+                                <li class="footer__sublist">
+                                    <a href="#" class="footer__sublink">
+                                        Sitemap
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link" data-id="link-about">
+                                Despre Bookzone
+                                <i class="icon-arrow_down"></i>
+                            </a>
+                            <ul class="footer__submenu" id="link-about">
+                                <li class="footer__sublist">
+                                    <a href="#" class="footer__sublink">
+                                        Întrebări frecvente
+                                    </a>
+                                </li>
+                                <li class="footer__sublist">
+                                    <a href="#" class="footer__sublink">
+                                        Termeni şi Condiţii
+                                    </a>
+                                </li>
+                                <li class="footer__sublist">
+                                    <a href="#" class="footer__sublink">
+                                        Modalităţi de plată
+                                    </a>
+                                </li>
+                                <li class="footer__sublist">
+                                    <a href="#" class="footer__sublink">
+                                        Politica de retur
+                                    </a>
+                                </li>
+                                <li class="footer__sublist">
+                                    <a href="#" class="footer__sublink">
+                                        Contact și date firmă
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ./-- footer__menu__brand -->
+                <div class="footer__social">
+                    <img src="img/test.png" alt="Facebook" width="30px">
+                    <p class="footer__social__text">Urmărește-ne pe Facebook</p>
+                </div>
+                <!-- ./-- footer__social -->
+                <div class="footer__company">
+                    <div class="footer__company__partners">
+                        <img src="img/payu.png" alt="PayU" width="100px">
+                        <img src="img/mstc.png" alt="Visa Mastercard" width="100px">
+                    </div>
+                    <p class="footer__company__copyright">
+                        © Copyright 2020 BESTSELLER PUBLISHING SRL <br>
+                        C.U.I. RO 37828810, Nr. Reg. Com. J23/3218/2017
+                    </p>
+                </div>
+                <!-- ./-- footer__company -->
+            </footer>
+            <!-- ./ -- footer-menu facebook partners copyright -->
+        </div>
+    </main>
+    <!--
+    // =======================================================
+    // POPUPS -------------------------------------- /////////
+    // =======================================================
+    -->
+    <div class="popup popup-cart">
+        <div class="popup__wrap popup__wrap__cart">
+            <div class="popup__title">
+                <h3 class="popup__text">Produsul a fost adăugat în coș</h3>
+                <a href="#" class="popup__close">
+                    <i class="icon-close"></i>
+                </a>
+            </div>
+            <div class="cart">
+                <div class="cart__product">
+                    <img src="img/img01.png" alt="Dama de trefla" class="cart__product__img">
+                    <div class="cart__product__twrap">
+                        <p class="cart__product__name">Pachet Dama de trefla</p>
+                        <p class="cart__product__volume">Volumul 1 + 2</p>
+                    </div>
+                    <div class="cart__product__pwrap">
+                        <p class="cart__product__old">78lei</p>
+                        <p class="cart__product__price">39lei</p>
+                    </div>
+                    <button class="btn btn-details">
+                        <i class="btn-ico btn-ico--red icon-vezi_detalii_double_arrows"></i>
+                        <p class="btn-txt">Continuă</p>
+                    </button>
+                </div>
+                <div class="cart__promo">
+                    <p class="cart__promo__text">foloseste codul</p>
+                    <p class="cart__promo__title">DRA2020</p>
+                    <p class="cart__promo__left">Au mai rămas:</p>
+
+                    <div class="timer">
+                        <div class="timer__deadline">
+                            <!-- days -->
+                            <!-- <div class="deadline-format">
+                                <div>
+                                <h4 class="days">34</h4>
+                                <span>days</span>
+                                </div>
+                            </div> -->
+                            <!-- hours -->
+                            <div class="deadline-format">
+                                <div>
+                                <h4 class="hours">34</h4>
+                                <span>ore</span>
+                                </div>
+                            </div>
+                            <!-- minutes -->
+                            <div class="deadline-format">
+                                <div>
+                                <h4 class="minutes">34</h4>
+                                <span>min</span>
+                                </div>
+                            </div>
+                            <!-- seconds -->
+                            <div class="deadline-format">
+                                <div>
+                                <h4 class="seconds">34</h4>
+                                <span>sec</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./-- deadline -->
+                    </div>
+                    <!-- ./-- timer -->
+                </div>
+                <div class="cart__recommend">
+                    <div class="cart__recommend__twrap">
+                        <p class="cart__recommend__title">Alții au cumpărat și</p>
+                    </div>
+                    <!-- Swiper -->
+                    <div class="swiper-container swiper-items">
+                        <div class="swiper-wrapper swiper-wrapper-cart">
+                            <div class="swiper-slide">
+                                <div class="cart__item">
+                                    <img src="img/img03.png" alt="Some book" class="cart__item__img">
+                                    <div class="cart__item__info">
+                                        <p class="cart__item__title">Mai presus de el </p>
+                                        <p class="cart__item__subtitle"></p>
+                                        <p class="cart__item__old">
+                                            <span class="cart__item__old--price">39 Lei</span>
+                                            <span class="cart__item__old--percent">(-49%)</span>
+                                        </p>
+                                        <p class="cart__item__price">19.9lei</p>
+                                    </div>
+                                    <div class="testa">
+                                        <a href="#" class="btn btn-ghost">Adaugă în coș</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cart__item">
+                                    <img src="img/img05.png" alt="Some book" class="cart__item__img">
+                                    <div class="cart__item__info">
+                                        <p class="cart__item__title">Mai presus de el </p>
+                                        <p class="cart__item__subtitle">Volumul 3 - Mai presus de </p>
+                                        <p class="cart__item__old">
+                                            <span class="cart__item__old--price">39 Lei</span>
+                                            <span class="cart__item__old--percent">(-49%)</span>
+                                        </p>
+                                        <p class="cart__item__price">19.9lei</p>
+                                    </div>
+                                    <div class="testa">
+                                        <a href="#" class="btn btn-ghost">Adaugă în coș</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cart__item">
+                                    <img src="img/img05.png" alt="Some book" class="cart__item__img">
+                                    <div class="cart__item__info">
+                                        <p class="cart__item__title">Mai presus de el </p>
+                                        <p class="cart__item__subtitle"></p>
+                                        <p class="cart__item__old">
+                                            <span class="cart__item__old--price">39 Lei</span>
+                                            <span class="cart__item__old--percent">(-49%)</span>
+                                        </p>
+                                        <p class="cart__item__price">19.9lei</p>
+                                    </div>
+                                    <div class="testa">
+                                        <a href="#" class="btn btn-ghost">Adaugă în coș</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cart__item">
+                                    <img src="img/img02.png" alt="Some book" class="cart__item__img">
+                                    <div class="cart__item__info">
+                                        <p class="cart__item__title">Mai presus de el </p>
+                                        <p class="cart__item__subtitle">Volumul 3 - Mai presus de greșeli</p>
+                                        <p class="cart__item__old">
+                                            <span class="cart__item__old--price">39 Lei</span>
+                                            <span class="cart__item__old--percent">(-49%)</span>
+                                        </p>
+                                        <p class="cart__item__price">19.9lei</p>
+                                    </div>
+                                    <div class="testa">
+                                        <a href="#" class="btn btn-ghost">Adaugă în coș</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">Slide 5</div>
+                            <div class="swiper-slide">Slide 6</div>
+                            <div class="swiper-slide">Slide 7</div>
+                            <div class="swiper-slide">Slide 8</div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next sw-next"></div>
+                        <div class="swiper-button-prev sw-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- ./-- wrap -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-<script src="js/swiper.min.js"></script>
-<script src="js/script.js"></script>
+    <!-- ./-- popup-cart -->
+    <div class="popup popup-specs">
+        <div class="popup__wrap">
+            <div class="popup__title">
+                <h3 class="popup__text">Specificatii</h3>
+                <a href="#" class="popup__close">
+                    <i class="icon-close"></i>
+                </a>
+            </div>
+            <ul class="specs">
+                <li class="specs__item">
+                    <span class="specs__item__item">Dama de trefla volum 1</span>
+                </li>
+                <li class="specs__item">
+                    <span class="specs__item__cat">Editura</span>
+                    <span class="specs__item__item">Bookzone</span>
+                </li>
+                <li class="specs__item">
+                    <span class="specs__item__cat">Autor</span>
+                    <span class="specs__item__item">Dama de Treflă nume pe doua randuri</span>
+                </li>
+                <li class="specs__item">
+                    <span class="specs__item__cat">Nr. de pagini</span>
+                    <span class="specs__item__item">254</span>
+                </li>
+                <li class="specs__item">
+                    <span class="specs__item__cat">Anul apariției</span>
+                    <span class="specs__item__item">2019</span>
+                </li>
+                <li class="specs__item">
+                    <span class="specs__item__cat">ISBN</span>
+                    <span class="specs__item__item">1546585634221</span>
+                </li>
+                <li class="specs__item">
+                    <span class="specs__item__cat">Categoria</span>
+                    <span class="specs__item__item">Cărți de dragoste</span>
+                </li>
+                <li class="specs__item">
+                    <span class="specs__item__cat">Editia</span>
+                    <span class="specs__item__item">Softcover</span>
+                </li>
+            </ul>
+            <!-- ./-- specs1 -->
+            <ul class="specs">
+                <li class="specs__item">
+                    <span class="specs__item__item">Dama de trefla volum 2</span>
+                </li>
+                <li class="specs__item">
+                    <span class="specs__item__cat">Editura</span>
+                    <span class="specs__item__item">Bookzone</span>
+                </li>
+                <li class="specs__item">
+                    <span class="specs__item__cat">Autor</span>
+                    <span class="specs__item__item">Dama de Treflă nume pe doua randuri</span>
+                </li>
+                <li class="specs__item">
+                    <span class="specs__item__cat">Nr. de pagini</span>
+                    <span class="specs__item__item">254</span>
+                </li>
+                <li class="specs__item">
+                    <span class="specs__item__cat">Anul apariției</span>
+                    <span class="specs__item__item">2019</span>
+                </li>
+                <li class="specs__item">
+                    <span class="specs__item__cat">ISBN</span>
+                    <span class="specs__item__item">1546585634221</span>
+                </li>
+                <li class="specs__item">
+                    <span class="specs__item__cat">Categoria</span>
+                    <span class="specs__item__item">Cărți de dragoste</span>
+                </li>
+                <li class="specs__item">
+                    <span class="specs__item__cat">Editia</span>
+                    <span class="specs__item__item">Softcover</span>
+                </li>
+            </ul>
+            <!-- ./-- specs2 -->
+            <ul class="specs">
+                <li class="specs__item">
+                    <span class="specs__item__item">Dama de trefla volum 3</span>
+                </li>
+                <li class="specs__item">
+                    <span class="specs__item__cat">Editura</span>
+                    <span class="specs__item__item">Bookzone</span>
+                </li>
+                <li class="specs__item">
+                    <span class="specs__item__cat">Autor</span>
+                    <span class="specs__item__item">Dama de Treflă nume pe doua randuri</span>
+                </li>
+                <li class="specs__item">
+                    <span class="specs__item__cat">Nr. de pagini</span>
+                    <span class="specs__item__item">254</span>
+                </li>
+                <li class="specs__item">
+                    <span class="specs__item__cat">Anul apariției</span>
+                    <span class="specs__item__item">2019</span>
+                </li>
+                <li class="specs__item">
+                    <span class="specs__item__cat">ISBN</span>
+                    <span class="specs__item__item">1546585634221</span>
+                </li>
+                <li class="specs__item">
+                    <span class="specs__item__cat">Categoria</span>
+                    <span class="specs__item__item">Cărți de dragoste</span>
+                </li>
+                <li class="specs__item">
+                    <span class="specs__item__cat">Editia</span>
+                    <span class="specs__item__item">Softcover</span>
+                </li>
+            </ul>
+            <!-- ./-- specs3 -->
+        </div>
+        <!-- ./-- popup__wrap -->
+    </div>
+    <!-- ./-- popup-specs -->
+    <div class="popup popup-desc">
+        <div class="popup__wrap">
+            <div class="popup__title">
+                <h3 class="popup__text">Descriere</h3>
+                <a href="#" class="popup__close">
+                    <i class="icon-close"></i>
+                </a>
+            </div>
+            <div class="description__wrap">
+                <div class="description__text">
+                    <i>"Dama de Treflă"</i> este un roman cu incertitudini și răspunsuri. Un roman despre libertate și alegeri, despre iubire și durere, despre oameni și fluturi în stomac, despre suflet și dor. Nu este doar o carte din categoria de cărți de dragoste, ci o poveste de viață, care te invită să o descoperi pe Dama de Treflă, să treci alături de ea prin suferințele și prin momentele frumoase din viața ei. Este o poveste de suflet, pentru suflet și cu suflet. Poate că vei citi despre sentimente care au fost prezente și în viața ta, poate că vei afla multitudinea perspectivelor pentru diferite situații din viața ta sau poate că pur și simplu te vei transpune în poveștile de dragoste din carte și vei ajunge să simți totul la fel de intens ca personajele.
+                </div>
+                <div class="description__text">
+                    Descoper-o pe Dama de Treflă exact așa cum este ea! Poate că noul ei roman te va ajuta să vindeci rănile și suferințele pe care le ai. Sau poate îți va răspunde la întrebări sau va naște altele noi. Dar, cu siguranță, povestea ei va trezi la viață ceva. Emoții. Fiori. Amintiri. Sentimente.
+                </div>
+                <div class="description__text">
+                    <b>Dama de Treflă vol. 1</b>
+                </div>
+                <div class="description__text">
+                    "Azi nu mai sunt așa cum mă știai tu, naivă și cuminte. M-am schimbat. M-ai schimbat tu. M-au schimbat toți oamenii care nu mi-au fost ce trebuia. Puțin câte puțin, așa, fără să simt. Azi, nu mai am regrete și nici nu îmi mai e dor de tine sau de noi... Mi-am prins alte vise în păr de dimineață și nu îmi mai fac iluzii că se vor întâmpla minuni. Am învățat să accept realitatea și să nu îmi mai fac speranțe deșarte. Am învățat să eliberez oamenii care oricum mi-au plecat sau pe cei pe care încă îi păstram în suflet inutil.
+                </div>
+                <div class="description__text">
+                Să nu mai spui că mă cunoști. Te-am lăsat să-mi pleci din suflet și am închis definitiv acea ușă. Dacă aveai de gând să te întorci… E prea târziu! Nu mă mai rog de oameni să mă iubească și nu îmi mai leg fericirea de ei. Nu mai cred că am nevoie de ajutor ca să mă ridic și nici ca să reușesc ce mi-am propus. Nu mai aștept să mi se întâmple lucruri frumoase, le fac eu însămi și, dacă vreau ceva, îmi iau pur și simplu."
+                </div>
+            </div>
+        </div>
+        <!-- ./-- popup__wrap -->
+    </div>
+    <!-- ./-- popup-desc -->
+    <div class="popup popup-review">
+        <div class="popup__wrap popup__wrap--review">
+            <div class="popup__title">
+                <h3 class="popup__text">Scrie o recenzie</h3>
+                <a href="#" class="popup__close">
+                    <i class="icon-close"></i>
+                </a>
+            </div>
+            <div class="review__wrap">
+                <div class="review__product">
+                    <p class="review__title__text">Produs</p>
+                    <a href="#" class="review__product__link">Pachet “Dama de Treflă”</a>
+                </div>
+                <!-- ./-- product -->
+                <div class="review__evaluate">
+                    <p class="review__title__text">Evaluare</p>
+                    <div class="review__rating">
+                        <div class="review__rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                        </div>
+                        <span class="review__rate-grade">Excelent</span>
+                    </div>
+                    <p class="review__evaluate__info">Probleme cu produsul sau livrarea?</p>
+                    <a href="#" class="review__evaluate__report">
+                        <i class="icon-trimite_sesizare"></i>
+                        Trimite o sesizare
+                    </a>
+                </div>
+                <!-- ./-- evaluate -->
+                <div class="review__review">
+                    <p class="review__title__text">Recenzie</p>
+                    <form action="post">
+                        <textarea name="recenzie" id="recenzie" class="review__review__inptext" rows="5" placeholder="Scrie despre produs"></textarea>
+                    </form>
+                </div>
+                <!-- ./-- review -->
+                <div class="review__title-opt">
+                    <p class="review__title__text">Titlu <span class="review__title__text--opt">(optional)</span></p>
+                    <form action="post">
+                        <input type="text" autocomplete="off" class="review__input-title" placeholder="Scrie propriul titlu">
+                    </form>
+                </div>
+                <!-- ./review__title--opt -->
+                <div class="review__add-image">
+                    <p class="review__title__text">Galerie <span class="review__title__text--opt">(optional)</span></p>
+                    <div class="review__add-image__wrap">
+                        <form action="post" class="review__addfile">
+                            <input type="file" id="review__img" multiple class="review__imgup">
+                            <label for="review__img" class="thumbnail">
+                                <i class="icon-plus"></i>
+                            </label>
+                        </form>
+                        <div class="review__add-image__placeholder">
+                            <!-- 
+                                // preview images goes here
+                                check script.js ->  previewImages()
+                             -->
+                        </div>
+                    </div>
+                    <!-- ./-- wrap end -->
+                </div>
+                <!-- ./-- review__add-image -->
+                <div class="review__footer">
+                    <p class="review__footer__text">Prin publicarea recenziei, ești de acord cu <a href="#" class="review__footer__text__link">termenii și condițiile</a> site-ului.</p>
+                    <div class="review__footer__cta">
+                        <button class="btn-blue">Scrie o recenzie</button>
+                        <a href="#" class="review__footer__link">Anulează</a>
+                    </div>
+                </div>
+            </div>
+            <!-- ./-- review__wrap -->
+        </div>
+        <!-- ./-- popup__wrap -->
+    </div>
+    <!-- ./-- popup-review -->
+    <script src="js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

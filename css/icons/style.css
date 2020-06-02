@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?synrvh');
+  src:  url('fonts/icomoon.eot?synrvh#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?synrvh') format('truetype'),
+    url('fonts/icomoon.woff?synrvh') format('woff'),
+    url('fonts/icomoon.svg?synrvh#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-vezi_detalii_double_arrows:before {
+  content: "\e921";
+}
+.icon-arrow_up_long:before {
+  content: "\e901";
+}
+.icon-trimite_sesizare:before {
+  content: "\e91e";
+}
+.icon-scrisoare:before {
+  content: "\e922";
+}
+.icon-close:before {
+  content: "\e91f";
+}
+.icon-adauga_in_cos:before {
+  content: "\e900";
+}
+.icon-ajutor_prin_telefon:before {
+  content: "\e902";
+}
+.icon-arrow_down:before {
+  content: "\e904";
+}
+.icon-arrow_left:before {
+  content: "\e903";
+}
+.icon-arrow_right:before {
+  content: "\e90c";
+}
+.icon-cadou:before {
+  content: "\e905";
+}
+.icon-comanda_prin_telefon:before {
+  content: "\e906";
+}
+.icon-comentarii:before {
+  content: "\e907";
+}
+.icon-comenteaza:before {
+  content: "\e908";
+}
+.icon-cos_navbar:before {
+  content: "\e909";
+}
+.icon-dovada_calitatii:before {
+  content: "\e90a";
+}
+.icon-egal:before {
+  content: "\e90b";
+}
+.icon-heart_filled:before {
+  content: "\e916";
+}
+.icon-heart_line:before {
+  content: "\e90d";
+}
+.icon-like:before {
+  content: "\e90e";
+}
+.icon-livrare:before {
+  content: "\e90f";
+}
+.icon-livrare_internationala:before {
+  content: "\e910";
+}
+.icon-my_account:before {
+  content: "\e911";
+}
+.icon-nou:before {
+  content: "\e912";
+}
+.icon-platesti_in_siguranta:before {
+  content: "\e913";
+}
+.icon-platesti_in_siguranta2:before {
+  content: "\e914";
+}
+.icon-plus:before {
+  content: "\e915";
+}
+.icon-rasfoieste_cartea:before {
+  content: "\e920";
+}
+.icon-retur:before {
+  content: "\e917";
+}
+.icon-ribbon_reducere:before {
+  content: "\e918";
+}
+.icon-scrisoare1:before {
+  content: "\e919";
+}
+.icon-search:before {
+  content: "\e91a";
+}
+.icon-stea_empty:before {
+  content: "\e91b";
+  color: #f5e9ae;
+}
+.icon-stea_filled:before {
+  content: "\e91c";
+  color: #f2ca00;
+}
+.icon-wish_navbar:before {
+  content: "\e91d";
+}
+.icon-arrow-right2:before {
+  content: "\ea3c";
+}
